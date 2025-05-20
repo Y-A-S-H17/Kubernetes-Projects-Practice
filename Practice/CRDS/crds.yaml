@@ -1,0 +1,38 @@
+kind: CustomResourceDefinition
+apiVersion: apiextensions.k8s.io/v1
+metadata:
+  name: devopsbatches.devopswithyash.com
+spec:
+  group: devopswithyash.com
+  names:
+    plural: devopsbatches
+    singular: devopsbatch
+    kind: DevOpsBatch
+    shortNames:
+      - batches
+      - ywd
+  scope: Namespaced
+  versions: 
+  - name: v1
+    served: true
+    storage: true
+    schema: 
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              name:
+                type: string
+                description: "This is the name of the DevOps Batch"
+              duration:
+                type: string
+                description: "this is the duration of batch"
+              mode:
+                type: string
+                description: "this is mode of the batch eg .live/recorded"
+              platform:
+                type: string
+                description: "this is the platform of the batch"
+

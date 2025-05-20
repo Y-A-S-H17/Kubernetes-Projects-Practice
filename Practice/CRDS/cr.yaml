@@ -1,0 +1,9 @@
+kind: DevOpsBatch
+apiVersion: devopswithyash.com/v1
+metadata:
+  name: masterclass-batch-1
+spec:
+  name: DevOps compltete course in single batch 1
+  duration: 3 months from 20 feb 2025
+  platform: devopswithyash.com
+  mode: live on youtube

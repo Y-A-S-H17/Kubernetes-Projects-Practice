@@ -1,0 +1,10 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: apache-manager
+  namespace: rbac
+rules:
+  - apiGroups: ["","apps"]
+    resources: ["deployment","pod"]
+    verbs: ["apply","delete"]
+
